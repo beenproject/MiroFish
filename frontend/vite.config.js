@@ -12,6 +12,7 @@ export default defineConfig({
     }
   },
   server: {
+    allowedHosts: true,
     port: 3000,
     open: true,
     proxy: {
@@ -21,5 +22,8 @@ export default defineConfig({
         secure: false
       }
     }
+  },
+  preview: {
+    allowedHosts: true,
   }
 })
